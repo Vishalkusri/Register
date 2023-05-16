@@ -1,0 +1,26 @@
+<h1 class="custom">oodles Technology</h1>
+
+<h2> {{title}}</h2>
+<!-- <div>
+    <app-home></app-home>
+</div> -->
+<form #basicForm="ngForm" (submit)="getData(basicForm.value)">
+    <input type="text" ngModel name="user" placeholder="enter your name">
+    <br> <br>
+    <input type="text" ngModel name="phone" placeholder="enter your mobile no.">
+    <br> <br>
+    <input type="text" ngModel name="email" placeholder="enter your email">
+    <br> <br>
+    <input type="text" ngModel name="password" placeholder="enter your password">
+    <br> <br>
+    <button>Register</button>
+
+</form>
+
+<ul>
+    <li>{{userData.user}}</li>
+    <li>{{userData.phone}}</li>
+    <li>{{userData.email}}</li>
+    <li>{{userData.password}}</li>
+    
+</ul>
